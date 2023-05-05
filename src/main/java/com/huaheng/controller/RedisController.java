@@ -18,7 +18,7 @@ public class RedisController {
     @RequestMapping("/testRedis")
     public String testRedis(){
         //设置值到redis去
-        redisTemplate.opsForValue().set("name","wc");
+        redisTemplate.opsForValue().set("name","wc2");
         String name = redisTemplate.opsForValue().get("name").toString();
         return name;
     }
